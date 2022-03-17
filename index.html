@@ -9,12 +9,13 @@
       href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/tailwindcss-jit-cdn"></script>
   </head>
 
-  <body class="">
+  <body class="w-full">
     <!-- outer container -->
     <div
-      class="border border-gray-300 rounded-sm shadow-lg py-10 px-10 mt-10 mb-10"
+      class="max-w-3xl mx-auto border border-gray-300 rounded-sm shadow-lg py-10 px-10 mt-10 mb-10"
     >
       <!-- header (profile) -->
 
@@ -70,13 +71,7 @@
             </a>
           </li>
         </ul>
-        <div class="flex justify-between items-center">
-          <div>
-            <div
-              class="bg-cover bg-no-repeat rounded-full h-52 w-52"
-              style="background-image: url(../bootstrap/dog.jpg)"
-            ></div>
-          </div>
+        <div class="flex justify-end items-center">
           <div class="grid justify-items-end">
             <h1 class="text-7xl font-extrabold">Tan Chong How</h1>
             <p class="text-xl mt-5">Front-End Developer</p>
@@ -84,8 +79,8 @@
         </div>
       </header>
       <!-- detailed info -->
-      <main class="flex gap-x-10 mt-10">
-        <div class="w-2/6">
+      <main class="grid md:grid-cols-[auto,3fr] mt-10 gap-10">
+        <div class="">
           <!-- contact details -->
           <strong class="text-xl font-medium">Contact Details</strong>
           <ul class="mt-2 mb-10">
@@ -128,6 +123,7 @@
             <li class="px-2 mt-1">JavaScript</li>
             <li class="px-2 mt-1">React</li>
             <li class="px-2 mt-1">Node.js</li>
+            <li class="px-2 mt-1">Typescript</li>
           </ul>
 
           <!-- what I'm learning these days -->
@@ -145,7 +141,7 @@
           </ul>
         </div>
         <!-- info -->
-        <div class="w-4/6">
+        <div class="">
           <section>
             <!-- about me -->
             <h2 class="text-2xl pb-1 border-b font-semibold">About</h2>
